@@ -1,0 +1,84 @@
+:root {
+  /* Mango Classic — from Envision app */
+  --mango-50: #fffcf0;
+  --mango-100: #fff9c2;
+  --mango-200: #ffefb0;
+  --mango-300: #ffd12f;
+  --mango-400: #ff9d24;
+  --mango-500: #ff8a1f;
+  --mango-600: #ff8c00;
+  --mango-700: #e96a12;
+  --mango-coral: #ff7f50;
+  --mango-red: #f04438;
+  --mango-deep: #e94b3c;
+  --mango-green: #9acd32;
+  --cream: #fffcf0;
+  --ink: #321d17;
+  --ink-soft: #8a594a;
+  --ink-muted: #a07060;
+  --white: #ffffff;
+  --shadow-mango: 0 12px 40px rgba(255, 138, 31, 0.14);
+  --shadow-mango-lg: 0 24px 60px rgba(255, 138, 31, 0.2);
+  --shadow-soft: 0 8px 30px rgba(50, 29, 23, 0.06);
+  --radius: 20px;
+  --radius-sm: 14px;
+  --font-display: "Bricolage Grotesque", system-ui, sans-serif;
+  --font-body: "Plus Jakarta Sans", system-ui, sans-serif;
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --max: 1120px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--ink);
+  background: var(--cream);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  font-weight: 650;
+}
+
+:focus-visible {
+  outline: 2px solid var(--mango-500);
+  outline-offset: 3px;
+}
+
+::selection {
+  background: var(--mango-200);
+  color: var(--ink);
+}
+
+#root {
+  min-height: 100svh;
+}
